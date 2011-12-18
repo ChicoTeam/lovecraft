@@ -145,7 +145,7 @@ function love.keypressed(k, u)
       generator:send("command", "quit")
       generator:wait()
       love.event.push("q")
-    elseif (k == " " or k == "w") then
+    elseif k == " " then
       if player.hook.fired then
         player.hook:reset()
         hookRelease = true
