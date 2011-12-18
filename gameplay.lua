@@ -2,7 +2,7 @@ function handleGameplayInput(player, terrain, dt)
   cursor.x = (love.mouse.getX() - love.graphics.getWidth()  / 2) / view.zoom + view.x
   cursor.y = (love.mouse.getY() - love.graphics.getHeight() / 2) / view.zoom + view.y
   
-  if not player.hook.hooked and love.keyboard.isDown(" ") and not player.falling and not hookRelease then
+  if not player.hook.hooked and (love.keyboard.isDown(" ") or love.keyboard.isDown("w")) and not player.falling and not hookRelease then
     player.falling = true
     player.vy = -15
   end
