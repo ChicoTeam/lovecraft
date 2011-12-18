@@ -22,6 +22,8 @@ Fire grappling hook: Middle mouse
 Jump / release hook: Space
 Shorten hook line:   W
 Lengthen hook line:  S
+Zoom in              ]
+Zoom out             [
 
 
 Requires LÖVE 0.7.2. See http://www.love2d.org for more info.
